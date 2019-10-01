@@ -1,0 +1,26 @@
+Autores: 
+Djanilson Lopes Martins
+Mailson Ribeiro Santos 
+
+Descrição projeto: O projeto possui o objetivo de implementa uma fila prioritária com uma pilha binária.
+A seguir temos os seguites metodos implementados:
+PQ (const Compare &cmp=Compare());
+PQ (const std::initializer_list< ValueType > &ilist, const Compare &cmp=Compare());
+PQ (InputIt first, InputIt last, const Compare &cmp=Compare());
+PQ (const PQ &);
+PQ & 	operator= (const PQ &rhs);
+virtual 	~PQ ();
+const_reference 	top (void);
+bool 	empty (void) const;
+size_type 	size (void) const;
+void 	clear ();
+void 	push (const_reference x);
+void 	pop ();
+void 	toss (const ValueType &x);
+void 	print () const;
+void 	fix_heap ();
+void 	move_down (size_type item_idx);
+void 	move_up (size_type item_idx);
+void 	reserve (size_type new_cap);
+bool 	full (void) const;
+ 
